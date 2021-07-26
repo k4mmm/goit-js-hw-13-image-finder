@@ -1,6 +1,9 @@
 {{#each this}}
 <div class="photo-card">
-    <img class="gallery-img" src="{{webformatURL}}" alt="{{tags}}" data-src="{{largeImageURL}} width="500" loading="lazy" />
+    <a href="{{largeImageURL}}">
+        <img class="gallery-img" src="{{webformatURL}}" alt="{{tags}}" data-src="{{largeImageURL}}" />
+    </a>
+    
 <div class="info">
     <p class="info-item">
         <span class="material-icons">

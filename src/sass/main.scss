@@ -1,4 +1,4 @@
-@import './basicLightbox.min.css';
+@import 'simplelightbox/dist/simple-lightbox.min';
 
 .search-form {
   background-color: blue;
@@ -26,6 +26,7 @@
 }
 
 .load-more {
+  margin: 20px 0 20px 0;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);

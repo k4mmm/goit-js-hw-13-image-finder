@@ -43,12 +43,13 @@ async function renderImg(searchQuery) {
     loadMore.hidden = false;
     loadMore.textContent = "Loading..."
     await apiService(searchQuery, page).then((r) => {
-         Notify.success(`Hooray! We found ${r.totalHits} images.`)
+         
          if (r.total == 0) {
              Notify.info('Sorry, there are no images matching your search query. Please try again.');
              loadMore.hidden = true;
              loadMore.textContent = "Load more"
          } else {
+             Notify.success(`Hooray! We found ${r.totalHits} images.`)
             clearGallery();
             createCards(r.hits);
              loadMore.hidden = false;

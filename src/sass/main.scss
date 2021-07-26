@@ -1,7 +1,65 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+@import './basicLightbox.min.css';
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+.search-form {
+  background-color: blue;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.search-form input {
+  width: 500px;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: green;
+  height: 40px;
+  outline: none;
+}
+.search-form button,
+.load-more {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border-width: 3px;
+  border-color: green;
+  outline: none;
+  cursor: pointer;
+}
+
+.load-more {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.photo-card {
+  margin: 15px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.gallery-img {
+  width: 480px;
+  height: 370px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+}
+.material-icons {
+  padding-right: 10px;
+}
